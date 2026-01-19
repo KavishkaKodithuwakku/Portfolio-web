@@ -162,6 +162,8 @@ span.navbar-text {
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
     position: relative;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+    transition: all 0.3s ease-in-out;
 }
 .social-icon a::before {
     content: "";
@@ -175,14 +177,16 @@ span.navbar-text {
 }
 .social-icon a:hover::before {
     transform: scale(1);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
 }
 .social-icon a img {
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
+	filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0));
 }
 .social-icon a:hover img {
-	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%) drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
 }
 .navbar-text button {
   font-weight: 700;
@@ -193,9 +197,13 @@ span.navbar-text {
   margin-left: 18px;
   position: relative;
   background-color: transparent;
-  transition: 0.3s ease-in-out;
-  border-radius: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .navbar-text button span {
   z-index: 1;
@@ -340,6 +348,9 @@ nav.navbar .container {
   margin-bottom: 16px;
   display: inline-block;
   width: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(170, 54, 124, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 .banner h1 {
   font-size: 65px;
@@ -383,12 +394,14 @@ nav.navbar .container {
   padding: 18px 34px;
   border: 1px solid #fff;
   background-color: transparent;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   width: auto;
   margin-top: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 .banner-button span {
   z-index: 1;

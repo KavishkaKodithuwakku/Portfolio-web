@@ -4,6 +4,8 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import downloadIcon from '../assets/img/download_icon.png';
+import CV from '../assets/CV/KavishkaKodithuwakku_CV.pdf';
 
 export const NavBar = () => {
     const [activelink, setActiveLink] = useState('home');
@@ -46,11 +48,11 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon 1" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon 2" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon 3" /></a>
+              <a href="https://www.linkedin.com/in/kavishkakodithuwakku" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn" /></a>
+              <a href="https://github.com/KavishkaKodithuwakku" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="GitHub" /></a>
+              <a href="https://www.instagram.com/kavish_kodithuwakku" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Instagram" /></a>
+              <a href={CV} download><img src={downloadIcon} alt="Download CV" /></a>
             </div>
-            <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
           </span>
         </BSNavbar.Collapse>
       </Container>
