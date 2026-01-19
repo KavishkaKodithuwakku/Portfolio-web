@@ -3,8 +3,6 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -37,19 +35,19 @@ export const Skills = () => {
                         <p>I’m a passionate Software Engineering student with a strong interest in web and mobile application development, Machine Learning, and Data Analytics.<br></br> I enjoy building user-friendly, intelligent solutions using modern technologies and data-driven approaches.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                         <div className="item">
-                            <img src={meter1} alt="Image" />
+                            <img src={meter1} alt="Full-Stack Development" />
                             <h5>Full-Stack Software Development</h5>
                         </div>
                         <div className="item">
-                            <img src={meter2} alt="Image" />
+                            <img src={meter2} alt="Mobile Development" />
                             <h5>Mobile App Development</h5>
                         </div>
                         <div className="item">
-                            <img src={meter3} alt="Image" />
+                            <img src={meter3} alt="Machine Learning" />
                             <h5>Machine Learning & AI</h5>
                         </div>
                         <div className="item">
-                            <img src={meter1} alt="Image" />
+                            <img src={meter1} alt="Data Analytics" />
                             <h5>Data Analytics & Engineering</h5>
                         </div>
 
