@@ -479,19 +479,34 @@ nav.navbar .container {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 130px 0 50px 0;
   position: relative;
+  background-color: #121212;
 }
 .skill-bx {
-  background: #151515;
-  border-radius: 64px;
+  background: rgba(21, 21, 21, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(170, 54, 124, 0.2);
+  border-radius: 20px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: 0;
+  transition: all 0.3s ease;
 }
+
+.skill-bx:hover {
+  border-color: rgba(170, 54, 124, 0.5);
+  background: rgba(21, 21, 21, 0.7);
+  box-shadow: 0 10px 30px rgba(170, 54, 124, 0.15);
+}
+
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .skill p {
     color: #B8B8B8;
@@ -505,10 +520,45 @@ nav.navbar .container {
   margin: 0 auto;
   position: relative;
 }
+.skill-slider .item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(170, 54, 124, 0.2);
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-slider .item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(170, 54, 124, 0.5);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(170, 54, 124, 0.2);
+}
+
 .skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
+  filter: drop-shadow(0 0 15px rgba(170, 54, 124, 0.3));
+  transition: all 0.3s ease;
 }
+
+.skill-slider .item:hover img {
+  filter: drop-shadow(0 0 25px rgba(170, 54, 124, 0.5));
+  transform: scale(1.1);
+}
+
+.skill-slider .item h5 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -517,16 +567,28 @@ nav.navbar .container {
   z-index: -4;
 }
 
+.background-image-right {
+  top: 0;
+  position: absolute;
+  right: 0;
+  width: 40%;
+  z-index: -4;
+}
+
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding: 130px 0;
   position: relative;
-  background-color: black;
+  background-color: #121212;
 }
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .project p {
   color: #B8B8B8;
@@ -541,7 +603,9 @@ nav.navbar .container {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
+  background-color: rgba(170, 54, 124, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(170, 54, 124, 0.2);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
@@ -645,8 +709,9 @@ nav.navbar .container {
 
 /************ Contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 80px 0 60px 0;
+  background: #121212;
+  padding: 130px 0 60px 0;
+  position: relative;
 }
 .contact .container {
   display: flex;
@@ -662,11 +727,16 @@ nav.navbar .container {
 	font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .contact form input, .contact form textarea {
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(170, 54, 124, 0.3);
   border-radius: 20px;
   color: #fff;
   margin: 0 0 8px 0;
@@ -677,29 +747,31 @@ nav.navbar .container {
   transition: 0.3s ease-in-out;
 }
 .contact form input:focus, .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
+  background: rgba(170, 54, 124, 0.15);
+  border-color: rgba(170, 54, 124, 0.6);
+  color: #fff;
 }
 .contact form input::placeholder, .contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: #8892b0;
 }
 .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #121212;
+  color: #fff;
   opacity: 0.8;
 }
 .contact form .contact-btn {
   font-weight: 700;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius: 20px;
   position: relative;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  border: none;
 }
 .contact form .contact-btn span {
   z-index: 1;
@@ -707,6 +779,8 @@ nav.navbar .container {
 }
 .contact form .contact-btn:hover {
   color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(170, 54, 124, 0.3);
 }
 .contact form .contact-btn::before {
   content: "";
@@ -909,5 +983,188 @@ nav.navbar .container {
   }
   .footer .social-icon {
     justify-content: center;
+  }
+}
+
+/************ Education Css ************/
+.education {
+  position: relative;
+  padding: 130px 0;
+  background-color: #121212;
+  overflow: hidden;
+}
+
+.education h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.education-title {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.education-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #8892b0;
+  margin-bottom: 60px;
+  line-height: 1.8;
+}
+
+.education-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, #AA367C, #4A2FBD, transparent);
+}
+
+.education-card {
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.education-card:nth-child(odd) {
+  flex-direction: row;
+  padding-right: 50%;
+}
+
+.education-card:nth-child(even) {
+  flex-direction: row-reverse;
+  padding-left: 50%;
+}
+
+.education-marker {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.marker-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #AA367C, #4A2FBD);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(170, 54, 124, 0.3);
+}
+
+.education-content {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(170, 54, 124, 0.2);
+  border-radius: 12px;
+  padding: 25px 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.education-content:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(170, 54, 124, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(170, 54, 124, 0.2);
+}
+
+.degree-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.institution-name {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.duration-badge {
+  display: inline-block;
+  padding: 8px 15px;
+  background: linear-gradient(135deg, rgba(170, 54, 124, 0.2), rgba(74, 47, 189, 0.2));
+  border: 1px solid rgba(170, 54, 124, 0.3);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.duration-badge.current {
+  background: linear-gradient(135deg, rgba(170, 54, 124, 0.3), rgba(74, 47, 189, 0.3));
+  border-color: rgba(170, 54, 124, 0.5);
+  box-shadow: 0 0 15px rgba(170, 54, 124, 0.2);
+}
+
+@media (max-width: 768px) {
+  .education {
+    padding: 100px 0;
+  }
+
+  .education h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+
+  .education-timeline::before {
+    left: 20px;
+  }
+
+  .education-card,
+  .education-card:nth-child(odd),
+  .education-card:nth-child(even) {
+    flex-direction: row;
+    padding: 0 0 0 100px;
+  }
+
+  .education-marker {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .education-content {
+    padding: 20px;
+  }
+
+  .degree-title {
+    font-size: 16px;
+  }
+
+  .institution-name {
+    font-size: 13px;
   }
 }

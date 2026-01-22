@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
+import colorSharp from "../assets/img/color-sharp.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -90,6 +91,7 @@ export const Contact = () => {
           </Col>
         </Row>
       </Container>
+      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   )
 }
