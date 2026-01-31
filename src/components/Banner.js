@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
-import {ArrowRightCircle} from 'react-bootstrap-icons';
 import headerImg from '../assets/img/header-img.svg';
 
 const Banner = () => {
@@ -55,10 +54,7 @@ const Banner = () => {
                                 <span className="wrap">{text}</span>
                             </h1>
                             <p>I'm a passionate Software Engineering undergraduate with strong interests in Full-Stack Development, AI, and Machine Learning. I love turning ideas into real-world applications by building web, mobile, and data-driven solutions. Always curious, always learning, and always improving my craft.</p>
-                            <button className="banner-button" onClick={() => console.log('connect')}>
-                                <span>Let's Connect</span>
-                                <ArrowRightCircle size={25} />
-                            </button>
+
                         </div>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
