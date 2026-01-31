@@ -6,12 +6,14 @@ import headerImg from '../assets/img/header-img.svg';
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["AI/ML Engineer", "Data Analyst", "Software Engineer"];
+    // token list for rotating titles (kept inside effect to avoid stale dependency warnings)
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
     
     useEffect(() => {
+        const toRotate = ["AI/ML Engineer", "Data Analyst", "Software Engineer"];
+
         const tick = () => {
             let i = loopNum % toRotate.length;
             let fullText = toRotate[i];
@@ -38,7 +40,7 @@ const Banner = () => {
         }, delta);
         
         return () => clearInterval(ticker);
-    }, [text, delta, loopNum, isDeleting, toRotate]);
+    }, [text, delta, loopNum, isDeleting]);
 
     return (
         <section className="banner" id="home">

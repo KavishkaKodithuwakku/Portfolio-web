@@ -54,6 +54,17 @@ export const NavBar = () => {
               <a href="https://www.instagram.com/kavish_kodithuwakku" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Instagram" /></a>
               <a href={CV} download><img src={downloadIcon} alt="Download CV" /></a>
             </div>
+
+            <button
+              className="contact-btn"
+              onClick={() => {
+                onUpdateActiveLink('connect');
+                const el = document.getElementById('connect');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              <span>Get In Touch</span>
+            </button>
           </span>
         </BSNavbar.Collapse>
       </Container>
