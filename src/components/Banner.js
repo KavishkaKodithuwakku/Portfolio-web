@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
-import headerImg from '../assets/img/header-img.svg';
 
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -45,7 +44,7 @@ const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={10} xl={8} className="banner-col">
                         <div className="banner-content">
                             <span className="tagline">Welcome to my Portfolio</span>
                             <h1>
@@ -55,11 +54,6 @@ const Banner = () => {
                             </h1>
                             <p>I'm a passionate Software Engineering undergraduate with strong interests in Full-Stack Development, AI, and Machine Learning. I love turning ideas into real-world applications by building web, mobile, and data-driven solutions. Always curious, always learning, and always improving my craft.</p>
 
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <div className="banner-image">
-                            <img src={headerImg} alt="Header Img" />
                         </div>
                     </Col>
                 </Row>

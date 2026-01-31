@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/webScraping.png";
+import projImg2 from "../assets/img/ML.jpg";
+import projImg3 from "../assets/img/mobile.jpg";
+import projImg4 from "../assets/img/portfolio.jpeg";
+import projImg5 from "../assets/img/Analysis.jpg";
+import  projImg6 from "../assets/img/Chatbot.webp";
 import colorSharp from "../assets/img/color-sharp.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -29,17 +32,17 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       description: "React, Frontend Development",
-      imgUrl: projImg1,
+      imgUrl: projImg4,
     },
     {
       title: "Data Analysis Dashboard",
       description: "Python, Pandas, Data Visualization",
-      imgUrl: projImg2,
+      imgUrl: projImg5,
     },
     {
       title: "AI Chatbot Application",
       description: "NLP, Firebase, Software Engineering",
-      imgUrl: projImg3,
+      imgUrl: projImg6,
     },
   ];
   
