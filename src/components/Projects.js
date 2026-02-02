@@ -6,8 +6,6 @@ import projImg3 from "../assets/img/mobile.jpg";
 import projImg4 from "../assets/img/portfolio.jpeg";
 import projImg5 from "../assets/img/Analysis.jpg";
 import  projImg6 from "../assets/img/Chatbot.webp";
-import colorSharp from "../assets/img/color-sharp.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -99,8 +97,6 @@ const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp} alt="" />
-      <img className="background-image-right" src={colorSharp2} alt="" />
     </section>
   )
 }

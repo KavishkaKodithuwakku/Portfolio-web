@@ -49,7 +49,7 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/kavishkakodithuwakku" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn" /></a>
+              <a href="https://www.linkedin.com/in/kavishka-kodithuwakku21" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn" /></a>
               <a href="https://github.com/KavishkaKodithuwakku" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="GitHub" /></a>
               <a href="https://www.instagram.com/kavish_kodithuwakku" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Instagram" /></a>
               <a href={CV} download><img src={downloadIcon} alt="Download CV" /></a>
@@ -62,6 +62,7 @@ export const NavBar = () => {
                 const el = document.getElementById('connect');
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
               }}
+              aria-label="Get In Touch"
             >
               <span>Get In Touch</span>
             </button>
